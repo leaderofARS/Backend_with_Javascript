@@ -1,4 +1,3 @@
-// Chapter 8: Class with this keyword
 class Expense {
   constructor(description, amount) {
     this.description = description;
@@ -16,7 +15,6 @@ class Expense {
   }
 }
 
-// Chapter 7: Function and Scope
 let expenses = [];
 
 function addExpense(description, amount) {
@@ -35,7 +33,6 @@ function deleteExpense(id) {
   updateDOM();
 }
 
-// Chapter 9: DOM Manipulation
 function updateDOM() {
   const expensesDiv = document.getElementById("expenses");
   const totalEl = document.getElementById("total");
@@ -51,13 +48,11 @@ function updateDOM() {
   totalEl.textContent = total.toFixed(2);
 }
 
-// Event Listener for Add Button
 document.getElementById("add-btn").addEventListener("click", function () {
   const desc = document.getElementById("desc").value;
   const amt = document.getElementById("amount").value;
   addExpense(desc, amt);
 
-  // Clear inputs
   document.getElementById("desc").value = "";
   document.getElementById("amount").value = "";
 });
