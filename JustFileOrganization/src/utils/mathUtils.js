@@ -13,6 +13,9 @@ export function div(a, b){
 export function mod(a, b){
     return a%b;
 }
+export function circumference(r) {
+  return 2 * PI * r;
+}
 export function square(a){
     return a*a;
 }   
